@@ -3,58 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Showcase</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <title>Akil Jules | Interactive Learning Projects</title>
+    <meta name="description" content="Portfolio of Akil Jules, Senior Web Game Developer specializing in educational interactive experiences using PixiJS, Three.js, and modern web frameworks.">
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="container">
-        <header class="header">
-            <img src="./images/profile_picture.jpg" alt="Profile Picture" class="profile-picture">
-            <div class="header-text">
-                <h1>Akil Jules</h1>
-                <p class="subtitle">Senior Web Interactive Engineer</p>
-                <a href="https://www.linkedin.com/in/akiljules/" target="_blank" rel="noopener noreferrer" class="linkedin-link">
-                    <svg class="linkedin-logo" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                    </svg>
-                </a>
-            </div>
-            <div class="header-right">
-                <span class="project-showcase">Project Showcase</span>
-            </div>
-        </header>
-        
-        <main class="bento-grid" id="portfolio-grid">
-            <!-- Cards will be dynamically generated here -->
-        </main>
+<body id="top" data-page="home">
+    <header class="site-header">
+        <div class="shell nav-wrap">
+            <a class="brand" href="index.html" aria-label="Home"></a>
+            <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+                <span class="menu-toggle-icon" aria-hidden="true"></span>
+            </button>
+            <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+                <a href="#projects" class="is-active"> // Projects</a>
+                <a href="#about">// About</a>
+                <a href="#contact">// Contact</a>
+            </nav>
+        </div>
+    </header>
+    <div class="resume-float-wrap">
+        <a class="linkedin-float" href="https://www.linkedin.com/in/akiljules/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true">
+                <path d="M19 3A2 2 0 0 1 21 5v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zm-9.1 6.74H7.07V17h2.83V9.74zM8.49 6.5a1.64 1.64 0 1 0 0 3.28 1.64 1.64 0 0 0 0-3.28zM17 12.66c0-2.18-1.17-3.2-2.74-3.2-1.26 0-1.82.69-2.13 1.18v-1h-2.83V17h2.83v-3.9c0-1.03.2-2.03 1.47-2.03 1.25 0 1.27 1.17 1.27 2.1V17H17v-4.34z" fill="currentColor"/>
+            </svg>
+        </a>
+        <a class="resume-float" href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
     </div>
 
-    <!-- Modal for project details -->
-    <div class="modal" id="project-modal">
-        <div class="modal-content">
-            <span class="close-btn" id="close-modal">&times;</span>
-            <div class="modal-header">
-                <h2 id="modal-title"></h2>
+    <main>
+        <section class="hero">
+            <div class="hero-grid" aria-hidden="true"></div>
+            <div class="shell hero-content">
+                <article class="hero-panel">
+                    <div class="hero-text">
+                        <p class="eyebrow">FRONTEND • INTERACTIVE • GAMING</p>
+                        <div class="hero-name-wrap" aria-label="Akil Jules">
+                            <p class="hero-name-tag">PROFILE</p>
+                            <h1 class="hero-name">
+                                <span>AKIL</span>
+                                <span>JULES</span>
+                            </h1>
+                        </div>
+                        <p class="hero-copy">Senior Web Game • Interactive Developer</p>
+                        <p class="hero-location">Atlanta, Georgia</p>
+                        <div class="hero-actions">
+                            <a class="btn btn-solid" href="#projects">Explore Work ↓</a>
+                            <a class="btn btn-ghost" href="#contact">Get in touch →</a>
+                        </div>
+                    </div>
+                    <div class="hero-art" aria-hidden="true">
+                        <div class="hero-art-frame">
+                            <img src="images/profile_picture.jpg" alt="" class="hero-art-image">
+                        </div>
+                    </div>
+                </article>
+                </div>
+            <div class="hero-bottom-ribbon" aria-hidden="true">
+                <span>PIXIJS</span>
+                <span>THREE.JS</span>
+                <span>PHASER</span>
+                <span>UNITY</span>
+                <span>WEBGL</span>
+                <span>REACT</span>
             </div>
-            <div class="modal-body">
-                <div class="project-description">
-                    <p id="modal-description"></p>
+        </section>
+
+        <section class="scroll-section" id="projects">
+            <div class="shell projects-layout">
+                <div class="section-heading">
+                    <div class="section-title-wrap" aria-label="Project Showcase">
+                        <p class="section-eyebrow">// Selected Work</p>
+                        <p class="section-index">02</p>
+                        <div class="section-title-main">
+                            <h2 class="section-display-title">
+                                <span>PROJECT</span>
+                                <span>SHOWCASE</span>
+                            </h2>
+                        </div>
+                    </div>
                 </div>
-                <div class="image-gallery" id="modal-gallery">
-                    <!-- Gallery images will be inserted here -->
+
+                <div class="projects-gallery">
+                    <div id="projects-grid" class="projects-grid" aria-live="polite"></div>
+                    <p id="projects-empty" class="projects-empty" hidden>No projects match this search yet.</p>
                 </div>
-                <div class="modal-actions">
-                    <a href="#" id="visit-source" class="visit-btn" target="_blank" rel="noopener noreferrer">
-                        Visit Source
+            </div>
+        </section>
+
+        <section class="scroll-section" id="about">
+            <div class="shell">
+                <div class="section-title-wrap" aria-label="About">
+                    <p class="section-eyebrow">// Profile</p>
+                    <p class="section-index">03</p>
+                    <div class="section-title-main">
+                        <h2 class="section-display-title">
+                            <span>ABOUT</span>
+                        </h2>
+                    </div>
+                </div>
+                <p class="page-intro">Game developer with a passion for innovative interactive content across web and mobile, with a strong focus on educational outcomes and age-appropriate user experiences.</p>
+
+                <section class="content-grid">
+                    <article class="card">
+                        <h3>What I Build</h3>
+                        <p>I lead and implement web-first educational products that blend game mechanics with measurable learning objectives. My work spans prototypes through production release and long-term maintenance.</p>
+                        <ul class="clean-list">
+                            <li>Technical direction for multidisciplinary teams.</li>
+                            <li>Gameplay systems architecture for reusable frameworks.</li>
+                            <li>Artist-friendly content pipelines for animation and assets.</li>
+                            <li>Cross-platform shipping for browser and mobile targets.</li>
+                        </ul>
+                    </article>
+
+                    <aside class="card stack-card">
+                        <div class="stack-icons" aria-label="Core languages">
+                            <div class="stack-icon" aria-label="JavaScript">
+                                <img class="stack-glyph" src="images/js-svgrepo-com.svg" alt="JavaScript logo" loading="lazy">
+                            </div>
+                            <div class="stack-icon" aria-label="TypeScript">
+                                <img class="stack-glyph" src="images/typescript-svgrepo-com.svg" alt="TypeScript logo" loading="lazy">
+                            </div>
+                            <div class="stack-icon" aria-label="C Sharp">
+                                <img class="stack-glyph" src="images/c-sharp-svgrepo-com.svg" alt="C Sharp logo" loading="lazy">
+                            </div>
+                            <div class="stack-icon" aria-label="Lua">
+                                <img class="stack-glyph" src="images/lua-svgrepo-com.svg" alt="Lua logo" loading="lazy">
+                            </div>
+                            <div class="stack-icon" aria-label="GLSL">
+                                <img class="stack-glyph" src="images/glsl-svgrepo-com.svg" alt="GLSL logo" loading="lazy">
+                            </div>
+                            <div class="stack-icon" aria-label="PixiJS">
+                                <img class="stack-glyph" src="images/pixijs-logo-transparent-dark.svg" alt="PixiJS logo" loading="lazy">
+                            </div>
+                            <div class="stack-icon" aria-label="Godot">
+                                <img class="stack-glyph" src="images/Godot_icon.svg" alt="Godot logo" loading="lazy">
+                            </div>
+                        </div>
+                    </aside>
+                </section>
+
+                <section class="card section-card-tail">
+                    <h3>Recent Highlights</h3>
+                    <p>Delivered and supported educational game experiences for PBS Kids, Sesame Street initiatives, and literacy platforms. Collaborated with curriculum, design, and animation partners to align technical implementation with pedagogical goals.</p>
+                </section>
+            </div>
+        </section>
+
+        <section class="scroll-section" id="contact">
+            <div class="shell">
+                <div class="section-title-wrap" aria-label="Contact">
+                    <p class="section-eyebrow">// Get In Touch →</p>
+                    <p class="section-index">04</p>
+                    <div class="section-title-main">
+                        <h2 class="section-display-title">
+                            <span>CONTACT</span>
+                        </h2>
+                    </div>
+                </div>
+                <p class="page-intro">Open to full time and contract work</p>
+
+                <section class="contact-cta-row" aria-label="Contact actions">
+                    <a class="linkedin-round" href="https://www.linkedin.com/in/akiljules/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" focusable="false" aria-hidden="true">
+                            <path d="M19 3A2 2 0 0 1 21 5v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zm-9.1 6.74H7.07V17h2.83V9.74zM8.49 6.5a1.64 1.64 0 1 0 0 3.28 1.64 1.64 0 0 0 0-3.28zM17 12.66c0-2.18-1.17-3.2-2.74-3.2-1.26 0-1.82.69-2.13 1.18v-1h-2.83V17h2.83v-3.9c0-1.03.2-2.03 1.47-2.03 1.25 0 1.27 1.17 1.27 2.1V17H17v-4.34z" fill="currentColor"/>
+                        </svg>
                     </a>
-                </div>
+                    <a class="btn btn-solid" href="mailto:akil@animystic.io">Lets Connect →</a>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="shell footer-wrap">
+            <p>Akil Jules · Web Game Developer</p>
+            <div>
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume PDF</a>
             </div>
         </div>
-    </div>
+    </footer>
 
-    <script src="script.js"></script>
+    <dialog class="project-dialog" id="project-dialog">
+        <article>
+            <button class="dialog-close" id="dialog-close" aria-label="Close project details">X</button>
+            <p class="eyebrow" id="dialog-tag">Project</p>
+            <h3 id="dialog-title"></h3>
+            <p id="dialog-description"></p>
+            <div class="dialog-actions">
+                <a id="dialog-link" class="btn btn-solid" href="#" target="_blank" rel="noopener noreferrer">See Project Live →</a>
+            </div>
+            <div id="dialog-gallery" class="dialog-gallery"></div>
+        </article>
+    </dialog>
+
+    <script src="script.js" defer></script>
 </body>
 </html>

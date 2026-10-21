@@ -55,6 +55,16 @@ const PROJECT_IMAGE_MAP = {
             "images/jelly_ben_and_pogo_karaoke_night_gameplay3.png"
         ]
     },
+    "Jelly Ben And Pogo: Sakto": {
+        cover: "images/jelly_ben_and_pogo_sakto_card.png",
+        gallery: [
+            "images/jelly_ben_and_pogo_sakto_card.png",
+            "images/jelly_ben_and_pogo_sakto_gameplay1.png",
+            "images/jelly_ben_and_pogo_sakto_gameplay2.png",
+            "images/jelly_ben_and_pogo_sakto_gameplay5.png",
+            "images/jelly_ben_and_pogo_sakto_gameplay6.png"
+        ]
+    },
     "Visiting the doctor": {
         cover: "images/visiting_the_doctor_card.png",
         gallery: [
@@ -120,6 +130,34 @@ function setupMenuToggle() {
     nav.addEventListener("click", () => {
         nav.classList.remove("is-open");
         menuButton.setAttribute("aria-expanded", "false");
+    });
+}
+
+function setupContactDialog() {
+    const openButton = document.getElementById("contact-open-btn");
+    const dialog = document.getElementById("contact-dialog");
+    const closeButton = document.getElementById("contact-dialog-close");
+
+    if (!openButton || !dialog || !closeButton) {
+        return;
+    }
+
+    openButton.addEventListener("click", () => {
+        if (typeof dialog.showModal === "function") {
+            dialog.showModal();
+        }
+    });
+
+    closeButton.addEventListener("click", () => {
+        if (dialog.open) {
+            dialog.close();
+        }
+    });
+
+    dialog.addEventListener("click", (event) => {
+        if (event.target === dialog) {
+            dialog.close();
+        }
     });
 }
 
@@ -287,6 +325,7 @@ class PortfolioHome {
 
 document.addEventListener("DOMContentLoaded", async () => {
     setupMenuToggle();
+    setupContactDialog();
 
     const page = document.body.dataset.page;
     if (page === "home") {

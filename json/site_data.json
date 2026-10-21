@@ -1,33 +1,12 @@
 [
-  {
-    "name": "Bajillions Early Math",
-    "website": "https://www.fablevisiongames.com/game/bajillions",
-    "keywords" : "phaser",
-    "description": "Early childhood math games designed to match a child's current math level, and progress them through various base level math topics such as counting, subitizing, arithmetic, shape composition and spatial visualization. Developed by FableVision in partnership with the Marsico Institute for Early Learning and funded by the National Science Foundation and Institute of Education Sciences. Worked on gameplay programming using PhaserJS."
-  },
   
-  {
-    "name": "PBS Kids Play And Learn Science",
-    "keywords" : "unity",
-    "website": "https://www.youtube.com/watch?v=0GgtXqOSexU",
-    "description": "A soft science based app covering core topics in Earth Science, Physical Science and Life Science. Developed as part of the PBS Ready To Learn Initiative with funding from the US Department of Education. Worked on updates to this app, migrating to new version of Unity, fixing particle FX and physics bugs, as well as adding analytics."
-  },
-  {
-    "name": "PBS Kids Play And Learn Engineering",
-    "keywords" : "pixijs",
-    "website": "https://www.youtube.com/watch?v=C3GhiZdapQI",
-    "description": "Educational app designed to allow kids to explore and learn STEM concepts with various engineering oriented games. Developed as part of the PBS Ready To Learn Initiative with funding from the US Department of Education. Worked on gameplay and UI programming on all games."
-  },
-  {
-    "name": "Amira and the Story Craft",
-    "keywords": "react",
-    "website": "https://www.amiralearning.com/amira-reading-suite",
-    "description": "A.I. Text to speech and speech to text reading tutor designed to live listen to a child's reading and guide them through the learning process. Worked on implementing WebGL game mechanics, physics and UI using PixiJS and React."
-  },
-  {
-    "name": "Jelly Ben And Pogo: Babysitting Squee",
-    "keywords" : "pixijs",
-    "website": "https://pbskids.org/games/play/babysitting-squee/1031557",
+  
+  
+  
+   {
+    "name": "Jelly Ben And Pogo: Sakto",
+    "keywords":  "pixijs",
+    "website": "https://pbskids.org/games/play/sakto/1377402",
     "description": "A Jelly Ben And Pogo interactive game set made as part of the CPB's Ready To Learn grant to help kids build vital functional literacy, critical thinking, collaboration, and \"world of work\" skills and knowledge through Filipino culture. Worked as development lead for a team of 3 engineers on game concepting and design."
   },
   {
@@ -37,10 +16,34 @@
     "description": "A Jelly Ben And Pogo interactive game set made as part of the CPB's Ready To Learn grant to help kids build vital functional literacy, critical thinking, collaboration, and \"world of work\" skills and knowledge through Filipino culture. Worked as development lead for a team of 3 engineers on game concepting and design."
   },
   {
-    "name": "Jelly Ben And Pogo: Sakto",
-    "keywords":  "pixijs",
-    "website": "https://pbskids.org/games/play/sakto/1377402",
+    "name": "Jelly Ben And Pogo: Babysitting Squee",
+    "keywords" : "pixijs",
+    "website": "https://pbskids.org/games/play/babysitting-squee/1031557",
     "description": "A Jelly Ben And Pogo interactive game set made as part of the CPB's Ready To Learn grant to help kids build vital functional literacy, critical thinking, collaboration, and \"world of work\" skills and knowledge through Filipino culture. Worked as development lead for a team of 3 engineers on game concepting and design."
+  },
+  {
+    "name": "Bajillions Early Math",
+    "website": "https://www.fablevisiongames.com/game/bajillions",
+    "keywords" : "phaser",
+    "description": "Early childhood math games designed to match a child's current math level, and progress them through various base level math topics such as counting, subitizing, arithmetic, shape composition and spatial visualization. Developed by FableVision in partnership with the Marsico Institute for Early Learning and funded by the National Science Foundation and Institute of Education Sciences. Worked on gameplay programming using PhaserJS."
+  },
+  {
+    "name": "Amira and the Story Craft",
+    "keywords": "react",
+    "website": "https://www.amiralearning.com/amira-reading-suite",
+    "description": "A.I. Text to speech and speech to text reading tutor designed to live listen to a child's reading and guide them through the learning process. Worked on implementing WebGL game mechanics, physics and UI using PixiJS and React."
+  },
+  {
+    "name": "PBS Kids Play And Learn Engineering",
+    "keywords" : "pixijs",
+    "website": "https://www.youtube.com/watch?v=C3GhiZdapQI",
+    "description": "Educational app designed to allow kids to explore and learn STEM concepts with various engineering oriented games. Developed as part of the PBS Ready To Learn Initiative with funding from the US Department of Education. Worked on gameplay and UI programming on all games."
+  },
+  {
+    "name": "PBS Kids Play And Learn Science",
+    "keywords" : "unity",
+    "website": "https://www.youtube.com/watch?v=0GgtXqOSexU",
+    "description": "A soft science based app covering core topics in Earth Science, Physical Science and Life Science. Developed as part of the PBS Ready To Learn Initiative with funding from the US Department of Education. Worked on updates to this app, migrating to new version of Unity, fixing particle FX and physics bugs, as well as adding analytics."
   },
   {
     "name": "Visiting the doctor",
